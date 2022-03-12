@@ -1,0 +1,9 @@
+.main-content {
+    grid-area: c;
+
+    background-color:  #669999;
+}
+
+.item {
+    color: tomato;
+}
