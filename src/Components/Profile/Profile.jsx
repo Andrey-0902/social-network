@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Profile.module.css';
-import MyPosts from "../Myposts/MyPosts";
+import MyPosts from "./Myposts/MyPosts";
 const Profile = () => {
     return (
         <main className={classes.mainContent}>
