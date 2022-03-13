@@ -1,5 +1,9 @@
-.main-nav {
+.mainNav {
     grid-area: n;
 
     background-color: burlywood;
+}
+
+.item {
+    color: wheat;
 }

@@ -1,9 +1,6 @@
-.main-content {
+.mainContent {
     grid-area: c;
 
     background-color:  #669999;
 }
 
-.item {
-    color: tomato;
-}

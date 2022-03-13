@@ -1,21 +1,15 @@
 import React from 'react';
 import classes from './Profile.module.css';
+import MyPosts from "./Myposts/MyPosts";
 const Profile = () => {
     return (
-        <main className="main-content">
+        <main className={classes.mainContent}>
             <img src="https://avatars.mds.yandex.net/i?id=5ff0bca997edbf6d1fc20ce56034a496-5878999-images-thumbs&n=13" alt=""/>
             <section className="ava-and-descriptions">
                 <img src="https://avatars.mds.yandex.net/i?id=950c5627823560d0f8d4020de1e0ff9d-5887217-images-thumbs&n=13" alt=""/>
                 <p>information</p>
             </section>
-            <section className="my-posts">
-                <h2>My posts</h2>
-                <div>my post</div>
-            </section>
-            <section className="posts">
-                <div className={classes.item}>post 1</div>
-                <div className="item">post 2</div>
-            </section>
+            <MyPosts />
         </main>
     );
 };
