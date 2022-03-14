@@ -10,12 +10,8 @@ const MyPosts = () => {
                 <textarea name="" id="" cols="30" rows="10"></textarea>
                 <button>Add post</button>
                 <ul className="postsList">
-                    <Post/>
-                    <Post/>
-                    <Post/>
-                    <Post/>
-                    <Post/>
-                    <Post/>
+                    <Post message="Здорово Корова" likeCounts="15" />
+                    <Post message="Я Бык!" likeCounts="30"/>
                 </ul>
             </section>
         </div>
