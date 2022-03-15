@@ -3,15 +3,19 @@ import './App.css';
 import Header from "./Components/Header/Header";
 import NavBar from "./Components/Navbar/NavBar";
 import Profile from "./Components/Profile/Profile";
+import Dialogs from "./Components/Dialogs/Dialogs";
 
 const App = () => {
-  return (
-    <div className="app-wrapper">
-        <Header />
-        <NavBar />
-        <Profile />
-    </div>
-  );
+    return (
+        <div className="app-wrapper">
+            <Header/>
+            <NavBar/>
+            <div className="mainContent">
+                {/*<Profile/>*/}
+                <Dialogs />
+            </div>
+        </div>
+    );
 }
 
 
