@@ -6,9 +6,9 @@
 
 .item a {
     color: wheat;
-    /*text-decoration: none;*/
+    text-decoration: none;
 }
 
-.active a {
+a.active {
     color: gold;
 }
