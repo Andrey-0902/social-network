@@ -1,0 +1,9 @@
+.dialogsSection {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    padding: 10px;
+}
+
+.active {
+    color: gold;
+}
