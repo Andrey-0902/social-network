@@ -1,0 +1,13 @@
+.imgView {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.imgAvatar {
+    padding: 20px;
+}
+
+.information {
+    padding: 20px;
+}
