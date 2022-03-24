@@ -2,14 +2,11 @@ import React from 'react';
 import classes from './MyPosts.module.css';
 import Post from "./Post/Post";
 
-let posts = [
-    {id: '1', message: 'Здорово Корова', likeCounts: '15'},
-    {id: '2', message: 'Я Бык!', likeCounts: '30'}
-]
 
-let postsElements = posts.map ( p => <Post message={p.message} likeCounts={p.likeCounts} /> )
+const MyPosts = (props) => {
 
-const MyPosts = () => {
+    let postsElements = props.posts.map ( p => <Post message={p.message} likeCounts={p.likeCounts} /> )
+
     return (
         <div>
             <section className={classes.sectionMyPosts}>
