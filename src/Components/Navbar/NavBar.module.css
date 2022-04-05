@@ -1,7 +1,15 @@
 .mainNav {
     grid-area: n;
+    min-height: 100%;
 
     background-color: burlywood;
+}
+
+.mainNav__navList {
+    margin: 0;
+    padding-left: 20px;
+
+    list-style: none;
 }
 
 .item a {

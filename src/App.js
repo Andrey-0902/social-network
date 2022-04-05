@@ -8,13 +8,14 @@ import Dialogs from "./Components/Dialogs/Dialogs";
 import News from "./Components/News/News";
 import Music from "./Components/Music/Music";
 import Settings from "./Components/Settings/Settings";
+import Friends from "./Components/Navbar/Friends/Friends";
 
 const App = (props) => {
     return (
         <BrowserRouter>
             <div className="app-wrapper">
                 <Header/>
-                <NavBar/>
+                <NavBar state={props.state.sideBar}/>
                 <div className="mainContent">
                     <Routes>
                         <Route path='/dialogs/*' element={<Dialogs state={props.state.dialogsPage}/>}/>

@@ -1,0 +1,7 @@
+.listOfFriends {
+    padding: 0 10px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+}
