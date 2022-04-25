@@ -1,8 +1,12 @@
+import {renderEntireThree} from "../render";
+
 let state = {
     profilePage: {posts: [
         {id: '1', message: 'Здорово Корова', likeCounts: '15'},
         {id: '2', message: 'Я Бык!', likeCounts: '30'}
-    ]},
+    ],
+        newPostText: 'itkamasutra.com'
+    },
     dialogsPage: {dialogs: [
         {id: 1, name: 'Конь в пальто', avatar: 'https://i.pinimg.com/originals/cf/20/e9/cf20e9b409544bd9e371d23385b2cd65.jpg'},
         {id: 2, name: 'Мышка норушка', avatar: 'https://cdn52.zvuk.com/pic?type=artist&id=480682&size=600x600&ext=jpg'},
@@ -13,7 +17,9 @@ let state = {
         {id: 1, message: 'Привет, как дела?'},
         {id: 2, message: 'Учу React'},
         {id: 3, message: 'Yo'}
-    ]},
+    ],
+    newMessageText: 'Привет я Зверь'
+    },
     sideBar: {
         friends: [
             {id: 1, name: 'Andrew', avatar: 'https://i.pinimg.com/736x/cb/bc/98/cbbc9846dc4ae6e550ae71e7be2a36a2.jpg'},
@@ -22,5 +28,39 @@ let state = {
         ]
     }
 }
+
+export let addMessage = () => {
+    let newMessage = {
+        id: 4,
+        message: state.dialogsPage.newMessageText
+    };
+    state.dialogsPage.messages.push(newMessage);
+    state.dialogsPage.newMessageText = ''
+    renderEntireThree(state);
+}
+
+export let updateNewMessageText = (newText) => {
+    state.dialogsPage.newMessageText = newText;
+    renderEntireThree(state)
+}
+
+
+export let addPost = () => {
+    let newPost = {
+        id: '3',
+        message: state.profilePage.newPostText,
+        likeCounts: 0
+    }
+
+    state.profilePage.posts.push(newPost);
+    state.profilePage.newPostText = '';
+    renderEntireThree(state);
+}
+
+export let updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    renderEntireThree(state);
+}
+
 
 export default state
